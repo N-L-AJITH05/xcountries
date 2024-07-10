@@ -4,7 +4,7 @@ import "./Countries.css";
 const Tile = ({ flagUrl, name, altFlag }) => {
     return (
         <div className="tile">
-            <img src={flagUrl} alt={altFlag} className="flag-image" />
+            <img src={flagUrl} alt={altFlag || name} className="flag-image" />
             <h2>{name}</h2>
         </div>
     );
